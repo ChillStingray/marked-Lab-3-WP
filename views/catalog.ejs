@@ -1,3 +1,4 @@
+<%-include("header");-%>
 <% products.forEach(product => { %>
     <tr>
     <th scope="row"><%= product.name %></th>
@@ -11,4 +12,5 @@
     </tr>
     <br>
    <% }) %>
+   <%-include("footer");-%>
    
