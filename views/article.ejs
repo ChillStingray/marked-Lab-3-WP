@@ -1,0 +1,46 @@
+<%- include('header'); -%>
+    <div class="content">
+        <table id="article">
+            <thead>
+                <tr>
+                    <th scope="col">Reference</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Supplier</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">vat</th>
+                    <th scope="col">stock</th>
+                    <th scope="col">critical_stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                    <tr>
+                        <td>
+                            <%= product.reference %>
+                        </td>
+                        <td>
+                            <%= product.category %>
+                        </td>
+                        <td>
+                            <%= product.name %>
+                        </td>
+                        <td>
+                            <%= product.price %>AED
+                        </td>
+                        <td>
+                            <%= product.vat %>
+                        </td>
+                        <td>
+                            <%= product.stock %>
+                        </td>
+                        <td>
+                            <%= product.critical_stock %>
+                        </td>
+                    </tr>
+                    
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <%- include('footer'); -%>
