@@ -1,0 +1,13 @@
+<% products.forEach(product => { %>
+    <tr>
+    <th scope="row"><%= product.name %></th>
+    <td>
+    <a href="/api/article/<%= product.reference %>">
+    <%= product.reference %>
+    </a>
+    </td>
+    <td><%= product.category %></td>
+    <td><%= product.price %>AED</td>
+    </tr>
+   <% }) %>
+   
