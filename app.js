@@ -21,15 +21,15 @@ app.get('/', (req, res) => {
 //route for contacts
 app.get('/contacts', (req, res) => {
     res.render('contacts'); 
-   });
+});
 //route for register
 app.get('/register', (req, res) => {
     res.render('register'); 
-   });
+});
 //route for login
 app.get('/login', (req, res) => {
     res.render('login'); 
-   });
+});
 //pass requests to the router middleware
 const router = require('./routes/apis');
 app.use(router);
