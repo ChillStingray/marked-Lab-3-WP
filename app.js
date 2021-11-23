@@ -2,6 +2,13 @@ const express = require('express');
 //creating app
 const app = express();
 //send an HTTP response when receiving HTTP GET /
+
+const session = require('express-session');
+app.use(session({secret: 'some secret code'}));
+
+app.use(express.json()); 
+app.use(express.urlencoded({ extended: true }));
+
 app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.sendFile('public/index.html', { root: __dirname });
